@@ -1,12 +1,18 @@
 header{
-    border: 2px solid white;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 10;
+    background: linear-gradient(to right, #2eccb7, #3498db); 
 }
+
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    border: 2px solid red;
+    color: white;
 }
 
 .nav-list{
@@ -15,23 +21,22 @@ nav{
     display: flex;
     margin: 0;
     padding: 0;
-    border: 2px solid green;
 }
 
 .nav-list li{
     text-align: center;
     font-weight: bolder;
     width: 100px;
-    
+    cursor: pointer;
 }
 
 .nav-list a{
+    width: 100%;
+    color: inherit;
     text-decoration: none;
-    color: white;
     font-size: 15px;
     line-height: 50px;
 }
-
 
 nav #animation{
     position: absolute;
@@ -48,7 +53,7 @@ nav #animation{
 
 nav .brand{
     text-decoration: none;
-    color: aqua;
+    color: white;
     font-size: 40px;
 }
 
@@ -70,18 +75,82 @@ li:nth-child(4):hover~#animation{
     bottom: 0px;
     left: 0px;
 }
+.start-About{
+    position: absolute;
+    bottom: 0px;
+    left: 100px;
+}
+.start-Blog{
+    position: absolute;
+    bottom: 0px;
+    left: 200px;
+}
+.start-Contact{
+    position: absolute;
+    bottom: 0px;
+    left: 300px;
+}
 
-@media (max-width: 768px){
+.toggle-btn{
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 35px;
+    right: 10px;
+    flex-direction: column;
+    width: 30px;
+    height: 25px;
+    justify-content: space-around;
+}
+
+#toggle-checkbox{
+    display: none;
+}
+
+#toggle-checkbox:checked~ul{
+    display: inline-block;
+}
+
+.bar{
+    height: 3px;
+    width: 100%;
+    border-radius: 1px;
+    background-color: white;
+}
+
+.nav_active{
+    color: rgb(2 90 105);
+    border-radius: 8px;
+    box-shadow: 2px 2px 20px 2px rgba(255, 255, 255, 0.5) inset;
+}
+
+.nav_inactive{
+    color: white;
+    border-radius: 0px;
+    box-shadow: none;
+
+}
+
+@media screen and (max-width: 700px){
     nav{
         flex-direction: column;
         align-items: flex-start;
+        background-color: #19457d;
     }
-
     .nav-list{
         flex-direction: column;
+        width: 100%;
+        text-align: center;
+        display: none;
     }
-
     .nav-list li{
-        
+        width: 100%;
+        display: block;
+    }
+    nav #animation{
+        display: none;
+    }
+    .toggle-btn{
+        display: flex;
     }
 }
