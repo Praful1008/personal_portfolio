@@ -3,15 +3,18 @@
     top: 100px;
 }
 
-.intro{
-    height: 600px;
-    background-color: rgba(245, 234, 234, 0.15);
-    width: 80%;
-    /* min-width: 600px; */
-    margin: auto;
-    box-shadow: 2px 4px 10px rgba(139, 153, 170, 0.726),
-                4px 4px 20px rgba(255, 255, 255, 0.4) inset;
-    border-radius: 10px;
+.about_me .container{
+  min-width: 100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.about_me .container .box{
+  min-height: 600px;
+  position: relative;
+  width: 80%;
+  background-color: rgba(245, 234, 234, 0.15);
+  border-radius: 8px;
 }
   
   /* The actual timeline (the vertical ruler) */

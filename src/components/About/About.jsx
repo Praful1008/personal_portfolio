@@ -4,10 +4,19 @@ import './About.css'
 function About() {
     return (
         <div className="about_me">
-            <div className="intro">
+            <div className="outer">
+                <div className="container">
+                    <div className="circle c1"></div>
+                    <div className="circle c2"></div>
+                    <div className="circle c3"></div>
+                    <div className="circle c4"></div>
+                    <div className="box">
+                        
+                    </div>
+                </div>
                 <p>
                     Hi!, My name is <span>Praful Pratik</span>
-                </p>    
+                </p>
             </div>
 
             <div className="education">
