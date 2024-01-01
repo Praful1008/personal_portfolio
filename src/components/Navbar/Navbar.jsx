@@ -7,13 +7,13 @@ function Navbar() {
     let x = element;
     switch (x) {
       case "about":
-        document.getElementById("animation").className = "start-About";
+        document.getElementById("animation").className = "start-about";
         break;
       case "experience":
-        document.getElementById("animation").className = "start-Experience";
+        document.getElementById("animation").className = "start-experience";
         break;
       case "contact":
-        document.getElementById("animation").className = "start-Contact";
+        document.getElementById("animation").className = "start-contact";
         break;
       default:
         document.getElementById("animation").className = "start-home";

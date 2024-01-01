@@ -75,17 +75,17 @@ li:nth-child(4):hover~#animation{
     bottom: 0px;
     left: 0px;
 }
-.start-About{
+.start-about{
     position: absolute;
     bottom: 0px;
     left: 100px;
 }
-.start-Blog{
+.start-experience{
     position: absolute;
     bottom: 0px;
     left: 200px;
 }
-.start-Contact{
+.start-contact{
     position: absolute;
     bottom: 0px;
     left: 300px;
